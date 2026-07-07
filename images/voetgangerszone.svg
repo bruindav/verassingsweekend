@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <defs><linearGradient id="sky6" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFD060"/><stop offset="100%" stop-color="#FFA040"/></linearGradient></defs>
+  <!-- Warm afternoon sky -->
+  <rect width="400" height="280" fill="url(#sky6)"/>
+  <!-- Background buildings -->
+  <rect x="0" y="80" width="130" height="150" fill="#D4C49A"/>
+  <rect x="120" y="95" width="80" height="135" fill="#C8B88A"/>
+  <rect x="190" y="70" width="100" height="160" fill="#D0C090"/>
+  <rect x="280" y="88" width="120" height="142" fill="#C8B880"/>
+  <!-- Roof lines -->
+  <polygon points="0,80 65,50 130,80" fill="#A09060"/>
+  <polygon points="118,95 160,65 202,95" fill="#907050"/>
+  <polygon points="188,70 240,38 292,70" fill="#A09060"/>
+  <polygon points="278,88 340,58 400,88" fill="#907050"/>
+  <!-- Windows on buildings -->
+  <rect x="15" y="95" width="22" height="30" fill="#4A7AAA" rx="2" opacity="0.8"/>
+  <rect x="50" y="95" width="22" height="30" fill="#4A7AAA" rx="2" opacity="0.8"/>
+  <rect x="85" y="95" width="22" height="30" fill="#4A7AAA" rx="2" opacity="0.8"/>
+  <rect x="205" y="88" width="20" height="26" fill="#4A7AAA" rx="2" opacity="0.8"/>
+  <rect x="240" y="88" width="20" height="26" fill="#4A7AAA" rx="2" opacity="0.8"/>
+  <rect x="295" y="102" width="20" height="26" fill="#4A7AAA" rx="2" opacity="0.8"/>
+  <rect x="340" y="102" width="20" height="26" fill="#4A7AAA" rx="2" opacity="0.8"/>
+  <!-- Cobblestone square -->
+  <rect x="0" y="195" width="400" height="85" fill="#C8B89A"/>
+  <rect x="0" y="195" width="400" height="10" fill="#B8A880"/>
+  <!-- Cobble grid -->
+  <line x1="0" y1="210" x2="400" y2="210" stroke="#A89870" stroke-width="1" opacity="0.6"/>
+  <line x1="0" y1="225" x2="400" y2="225" stroke="#A89870" stroke-width="1" opacity="0.6"/>
+  <line x1="0" y1="240" x2="400" y2="240" stroke="#A89870" stroke-width="1" opacity="0.6"/>
+  <line x1="60" y1="195" x2="60" y2="280" stroke="#A89870" stroke-width="1" opacity="0.6"/>
+  <line x1="130" y1="195" x2="130" y2="280" stroke="#A89870" stroke-width="1" opacity="0.6"/>
+  <line x1="200" y1="195" x2="200" y2="280" stroke="#A89870" stroke-width="1" opacity="0.6"/>
+  <line x1="270" y1="195" x2="270" y2="280" stroke="#A89870" stroke-width="1" opacity="0.6"/>
+  <line x1="340" y1="195" x2="340" y2="280" stroke="#A89870" stroke-width="1" opacity="0.6"/>
+  <!-- Terras tables and chairs -->
+  <ellipse cx="100" cy="228" rx="20" ry="10" fill="#8B6914" opacity="0.9"/>
+  <rect x="80" y="225" width="40" height="3" fill="#6B4A0E" rx="1"/>
+  <rect x="88" y="228" width="4" height="14" fill="#5A3A0A"/>
+  <rect x="108" y="228" width="4" height="14" fill="#5A3A0A"/>
+  <ellipse cx="200" cy="232" rx="20" ry="10" fill="#8B6914" opacity="0.9"/>
+  <rect x="180" y="229" width="40" height="3" fill="#6B4A0E" rx="1"/>
+  <rect x="188" y="232" width="4" height="14" fill="#5A3A0A"/>
+  <rect x="208" y="232" width="4" height="14" fill="#5A3A0A"/>
+  <ellipse cx="300" cy="228" rx="20" ry="10" fill="#8B6914" opacity="0.9"/>
+  <rect x="280" y="225" width="40" height="3" fill="#6B4A0E" rx="1"/>
+  <!-- Parasols -->
+  <line x1="100" y1="195" x2="100" y2="225" stroke="#C8860A" stroke-width="2"/>
+  <ellipse cx="100" cy="195" rx="28" ry="8" fill="#C8860A" opacity="0.9"/>
+  <line x1="200" y1="195" x2="200" y2="229" stroke="#2C4A3E" stroke-width="2"/>
+  <ellipse cx="200" cy="195" rx="28" ry="8" fill="#2C4A3E" opacity="0.9"/>
+  <line x1="300" y1="195" x2="300" y2="225" stroke="#C8860A" stroke-width="2"/>
+  <ellipse cx="300" cy="195" rx="28" ry="8" fill="#C8860A" opacity="0.9"/>
+  <!-- People sitting (silhouettes) -->
+  <circle cx="92" cy="225" r="5" fill="#2C1A0E"/>
+  <circle cx="110" cy="225" r="5" fill="#2C1A0E"/>
+  <circle cx="188" cy="228" r="5" fill="#2C1A0E"/>
+  <circle cx="210" cy="228" r="5" fill="#2C1A0E"/>
+  <!-- Coffee cups on table -->
+  <rect x="96" y="218" width="8" height="6" fill="white" rx="1"/>
+  <rect x="196" y="222" width="8" height="6" fill="white" rx="1"/>
+  <!-- Sun -->
+  <circle cx="340" cy="40" r="28" fill="#FFD060" opacity="0.8"/>
+  <circle cx="340" cy="40" r="20" fill="#FFE080"/>
+</svg>

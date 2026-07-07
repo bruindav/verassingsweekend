@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <defs><linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#B8D4E8"/><stop offset="100%" stop-color="#D8EAF4"/></linearGradient></defs>
+  <rect width="400" height="280" fill="url(#sky2)"/>
+  <rect x="0" y="210" width="400" height="70" fill="#5A7A3A"/>
+  <!-- Main palace building -->
+  <rect x="60" y="100" width="280" height="120" fill="#D4C49A"/>
+  <!-- Roof -->
+  <rect x="55" y="90" width="290" height="18" fill="#8B6914"/>
+  <!-- Wings -->
+  <rect x="30" y="120" width="40" height="100" fill="#C8B88A"/>
+  <rect x="330" y="120" width="40" height="100" fill="#C8B88A"/>
+  <!-- Central portico -->
+  <rect x="158" y="115" width="84" height="105" fill="#C0A870"/>
+  <!-- Columns -->
+  <rect x="165" y="118" width="8" height="100" fill="#D8C898" rx="4"/>
+  <rect x="185" y="118" width="8" height="100" fill="#D8C898" rx="4"/>
+  <rect x="207" y="118" width="8" height="100" fill="#D8C898" rx="4"/>
+  <rect x="227" y="118" width="8" height="100" fill="#D8C898" rx="4"/>
+  <!-- Windows main building -->
+  <rect x="80" y="125" width="22" height="32" fill="#2C4A3E" rx="11" ry="11"/>
+  <rect x="115" y="125" width="22" height="32" fill="#2C4A3E" rx="11" ry="11"/>
+  <rect x="260" y="125" width="22" height="32" fill="#2C4A3E" rx="11" ry="11"/>
+  <rect x="295" y="125" width="22" height="32" fill="#2C4A3E" rx="11" ry="11"/>
+  <rect x="80" y="170" width="22" height="28" fill="#2C4A3E" rx="11" ry="11"/>
+  <rect x="115" y="170" width="22" height="28" fill="#2C4A3E" rx="11" ry="11"/>
+  <rect x="260" y="170" width="22" height="28" fill="#2C4A3E" rx="11" ry="11"/>
+  <rect x="295" y="170" width="22" height="28" fill="#2C4A3E" rx="11" ry="11"/>
+  <!-- Door -->
+  <rect x="183" y="175" width="34" height="45" fill="#4A3A1A" rx="4"/>
+  <!-- Garden/foreground -->
+  <rect x="0" y="225" width="400" height="55" fill="#4A6A2A"/>
+  <ellipse cx="200" cy="218" rx="160" ry="12" fill="#6A9A4A" opacity="0.6"/>
+  <!-- Pond -->
+  <ellipse cx="200" cy="235" rx="100" ry="14" fill="#4A8AAA" opacity="0.7"/>
+  <ellipse cx="200" cy="235" rx="90" ry="10" fill="#5A9ABA" opacity="0.5"/>
+  <!-- Trees -->
+  <rect x="15" y="155" width="10" height="65" fill="#5C4A2A"/>
+  <ellipse cx="20" cy="140" rx="28" ry="34" fill="#2D5A2D"/>
+  <rect x="370" y="158" width="10" height="62" fill="#5C4A2A"/>
+  <ellipse cx="375" cy="143" rx="26" ry="32" fill="#2D5A2D"/>
+</svg>

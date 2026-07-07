@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <defs><linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6B9BB8"/><stop offset="100%" stop-color="#A8C8DC"/></linearGradient></defs>
+  <rect width="400" height="280" fill="url(#sky3)"/>
+  <rect x="0" y="208" width="400" height="72" fill="#7A9A5A"/>
+  <!-- Dreifaltigkeitskirche - older Lutheran church style -->
+  <!-- Tower -->
+  <rect x="155" y="70" width="55" height="148" fill="#9A8A6E"/>
+  <!-- Pointed spire -->
+  <polygon points="150,70 182,15 210,70" fill="#6A5A3E"/>
+  <polygon points="178,25 182,8 186,25" fill="#8A7A4E"/>
+  <!-- Clock face -->
+  <circle cx="182" cy="95" r="14" fill="#E8D8A0"/>
+  <circle cx="182" cy="95" r="12" fill="#F0E8C0"/>
+  <line x1="182" y1="87" x2="182" y2="95" stroke="#4A3A2A" stroke-width="2"/>
+  <line x1="182" y1="95" x2="188" y2="99" stroke="#4A3A2A" stroke-width="2"/>
+  <!-- Tower windows -->
+  <rect x="170" y="115" width="24" height="36" fill="#2C4A3E" rx="12"/>
+  <rect x="170" y="162" width="24" height="30" fill="#2C4A3E" rx="12"/>
+  <!-- Nave -->
+  <rect x="90" y="148" width="80" height="70" fill="#A89870"/>
+  <rect x="230" y="148" width="80" height="70" fill="#A89870"/>
+  <!-- Nave roofs -->
+  <polygon points="85,148 130,120 175,148" fill="#7A6A4E"/>
+  <polygon points="225,148 270,120 315,148" fill="#7A6A4E"/>
+  <!-- Nave windows -->
+  <rect x="102" y="162" width="16" height="26" fill="#2C4A3E" rx="8"/>
+  <rect x="130" y="162" width="16" height="26" fill="#2C4A3E" rx="8"/>
+  <rect x="242" y="162" width="16" height="26" fill="#2C4A3E" rx="8"/>
+  <rect x="270" y="162" width="16" height="26" fill="#2C4A3E" rx="8"/>
+  <!-- Entrance door -->
+  <rect x="168" y="190" width="28" height="28" fill="#3A2A1A" rx="4"/>
+  <!-- Ground -->
+  <rect x="0" y="222" width="400" height="58" fill="#6A8A4A"/>
+  <ellipse cx="200" cy="220" rx="180" ry="8" fill="#8AAA5A" opacity="0.5"/>
+  <!-- Old trees flanking -->
+  <rect x="30" y="162" width="12" height="58" fill="#5C4A2A"/>
+  <ellipse cx="36" cy="146" rx="32" ry="40" fill="#1D4A1D"/>
+  <rect x="350" y="165" width="12" height="55" fill="#5C4A2A"/>
+  <ellipse cx="356" cy="150" rx="30" ry="38" fill="#1D4A1D"/>
+  <!-- Year badge -->
+  <rect x="148" y="248" width="104" height="22" fill="#2C4A3E" rx="4" opacity="0.8"/>
+  <text x="200" y="263" text-anchor="middle" fill="#F5D98B" font-size="11" font-family="Georgia,serif">Gesticht 1616</text>
+</svg>

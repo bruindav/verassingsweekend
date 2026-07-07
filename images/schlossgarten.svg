@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <defs>
+    <linearGradient id="sky4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#87CEEB"/><stop offset="100%" stop-color="#C8E8F4"/></linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4A8AAA"/><stop offset="100%" stop-color="#3A7A9A"/></linearGradient>
+  </defs>
+  <rect width="400" height="280" fill="url(#sky4)"/>
+  <!-- Background: Lamberti tower visible -->
+  <rect x="290" y="100" width="30" height="130" fill="#9B8B6E" opacity="0.6"/>
+  <polygon points="285,100 305,55 325,100" fill="#6B5C3E" opacity="0.6"/>
+  <!-- Main lawn -->
+  <rect x="0" y="190" width="400" height="90" fill="#5A8A3A"/>
+  <!-- Park path -->
+  <ellipse cx="200" cy="230" rx="160" ry="18" fill="#C8B89A" opacity="0.7"/>
+  <!-- Pond / Schlossteich -->
+  <ellipse cx="200" cy="210" rx="170" ry="38" fill="url(#water)"/>
+  <ellipse cx="200" cy="208" rx="155" ry="28" fill="#5A9ABA" opacity="0.4"/>
+  <!-- Water reflections -->
+  <line x1="140" y1="210" x2="200" y2="212" stroke="white" stroke-width="1" opacity="0.3"/>
+  <line x1="220" y1="208" x2="270" y2="211" stroke="white" stroke-width="1" opacity="0.3"/>
+  <!-- Big old trees -->
+  <rect x="20" y="130" width="16" height="80" fill="#5C4A2A"/>
+  <ellipse cx="28" cy="112" rx="42" ry="52" fill="#1D5A1D"/>
+  <ellipse cx="28" cy="108" rx="36" ry="44" fill="#2D6A2D"/>
+  <rect x="340" y="125" width="16" height="85" fill="#5C4A2A"/>
+  <ellipse cx="348" cy="107" rx="40" ry="50" fill="#1D5A1D"/>
+  <ellipse cx="348" cy="103" rx="34" ry="42" fill="#2D6A2D"/>
+  <!-- More trees -->
+  <rect x="80" y="148" width="12" height="60" fill="#5C4A2A"/>
+  <ellipse cx="86" cy="132" rx="34" ry="40" fill="#2D5A2D"/>
+  <rect x="290" y="145" width="12" height="65" fill="#5C4A2A"/>
+  <ellipse cx="296" cy="128" rx="32" ry="38" fill="#2D5A2D"/>
+  <!-- Bench -->
+  <rect x="160" y="222" width="48" height="6" fill="#8B6914" rx="2"/>
+  <rect x="163" y="228" width="6" height="12" fill="#6B4A0E"/>
+  <rect x="199" y="228" width="6" height="12" fill="#6B4A0E"/>
+  <!-- Walking people silhouettes -->
+  <ellipse cx="120" cy="235" rx="5" ry="12" fill="#2C4A3E" opacity="0.7"/>
+  <circle cx="120" cy="220" r="5" fill="#2C4A3E" opacity="0.7"/>
+  <ellipse cx="280" cy="238" rx="5" ry="11" fill="#C05A30" opacity="0.7"/>
+  <circle cx="280" cy="224" r="5" fill="#C05A30" opacity="0.7"/>
+  <!-- Ducks on water -->
+  <ellipse cx="155" cy="214" rx="8" ry="4" fill="white"/>
+  <circle cx="161" cy="212" r="4" fill="white"/>
+  <ellipse cx="240" cy="216" rx="8" ry="4" fill="white"/>
+  <circle cx="246" cy="214" r="4" fill="white"/>
+</svg>
