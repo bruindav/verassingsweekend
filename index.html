@@ -537,6 +537,57 @@
   .rv-jump button:hover { background: #3D6B5C; transform: scale(1.06); }
   .rv-jump button:disabled { opacity: 0.35; cursor: default; transform: none; }
 
+  /* OPA'S VERHAAL SIDEMENU (links) */
+  #op-toggle {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--green-dark);
+    color: var(--amber-light);
+    border: none;
+    padding: 14px 10px;
+    cursor: pointer;
+    z-index: 500;
+    border-radius: 0 10px 10px 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 3px 0 12px rgba(0,0,0,0.3);
+    transition: background 0.2s;
+  }
+  #op-toggle:hover { background: #3D6B5C; }
+
+  #op-panel {
+    position: fixed;
+    top: 0;
+    left: -420px;
+    width: 420px;
+    max-width: 92vw;
+    height: 100vh;
+    background: var(--cream);
+    z-index: 600;
+    box-shadow: 8px 0 32px rgba(0,0,0,0.25);
+    transition: left 0.35s cubic-bezier(0.4,0,0.2,1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  #op-panel.open { left: 0; }
+
+  #op-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 590;
+  }
+  #op-overlay.open { display: block; }
+
 </style>
 </head>
 <body>
@@ -1842,6 +1893,222 @@ function openArchiveLightbox(key) {
     }
   });
 </script>
+
+<button id="op-toggle" onclick="toggleOp()">👴 Opa's verhaal</button>
+
+<div id="op-overlay" onclick="toggleOp()"></div>
+
+<div id="op-panel">
+  <div class="rv-header">
+    <div>
+      <h2>👴 Opa's verhaal</h2>
+      <p>Johann Theodor Hanekamp</p>
+    </div>
+    <button id="op-close" onclick="toggleOp()">✕</button>
+  </div>
+
+  <div class="rv-nav" id="op-nav">
+    <button class="rv-nav-pill active" data-target="opa-geboren">1911</button>
+    <button class="rv-nav-pill" data-target="opa-osternburg">1922</button>
+    <button class="rv-nav-pill" data-target="opa-sudmoslesfehn">Jeugd</button>
+    <button class="rv-nav-pill" data-target="opa-friesoythe">Friesoythe</button>
+    <button class="rv-nav-pill" data-target="opa-amsterdam">1928</button>
+    <button class="rv-nav-pill" data-target="opa-huwelijk">1938</button>
+    <button class="rv-nav-pill" data-target="opa-vader">Nu</button>
+  </div>
+
+  <div class="rv-content" id="op-content">
+
+    <!-- HOOFDSTUK 1 -->
+    <div class="rv-dag" id="opa-geboren">
+      <div class="rv-dag-header">
+        <span class="rv-dag-datum">~1910 – 1911</span>
+        <span class="rv-dag-titel">Geboren in Osternburg</span>
+      </div>
+      <div class="rv-tekst">
+        <p>Osternburg was toen nog een zelfstandige gemeente vlak bij Oldenburg — een industriestadje met glasfabrieken en een grote spoorweginstallatie. Hier wordt Johann Theodor Hanekamp geboren, zoon van kleermaker <strong>Wilhelm Hanekamp</strong> en <strong>Margareta Kramer</strong>. Hij groeit op met zijn broers en zus: Lenie, Wilhelm, Heinrich en Karl.</p>
+
+        <div style="margin:14px 0;border-radius:8px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+          <img src="images/bevolkingsregister.jpg" alt="Bevolkingsregister met de familie Hanekamp" style="width:100%;display:block;">
+          <div style="background:#f8f6f0;padding:8px 12px;font-size:12px;color:#888;font-style:italic;">Het bevolkingsregister waarin de familie Hanekamp terug te vinden is 📜</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOOFDSTUK 2 -->
+    <div class="rv-dag" id="opa-osternburg">
+      <div class="rv-dag-header">
+        <span class="rv-dag-datum">~1922</span>
+        <span class="rv-dag-titel">Osternburg wordt deel van Oldenburg</span>
+      </div>
+      <div class="rv-tekst">
+        <p>Op 1 oktober 1922 wordt de gemeente Osternburg officieel ingelijfd bij Oldenburg. Opa is dan nog maar een jonge jongen wanneer zijn geboorteplaats ophoudt te bestaan als zelfstandige gemeente.</p>
+      </div>
+    </div>
+
+    <!-- HOOFDSTUK 3 -->
+    <div class="rv-dag" id="opa-sudmoslesfehn">
+      <div class="rv-dag-header">
+        <span class="rv-dag-datum">Kindertijd</span>
+        <span class="rv-dag-titel">Verhuizing naar Südmoslesfehn</span>
+      </div>
+      <div class="rv-tekst">
+        <p>Opa's ouders verhuizen met het gezin naar <strong>Südmoslesfehn</strong>, een klein veendorp vlak bij Oldenburg, ontstaan rond 1890 aan het Querkanal.</p>
+
+        <div style="margin:14px 0;border-radius:8px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+          <img src="images/oude-familiefoto-bij-het-huis-in-sud-moslesfehn.jpg" alt="Oude familiefoto bij het huis in Südmoslesfehn" style="width:100%;display:block;">
+          <div style="background:#f8f6f0;padding:8px 12px;font-size:12px;color:#888;font-style:italic;">Het gezin Hanekamp bij hun huis in Südmoslesfehn 📷</div>
+        </div>
+
+        <div class="rv-highlight">Op een kadastrale kaart uit 1940 staat de naam <strong>Hanekamp</strong> vermeld op perceel 3a aan het Querkanal — het huis van opa's ouders, teruggevonden!</div>
+      </div>
+    </div>
+
+    <!-- HOOFDSTUK 4 -->
+    <div class="rv-dag" id="opa-friesoythe">
+      <div class="rv-dag-header">
+        <span class="rv-dag-datum">~1923 – 1928</span>
+        <span class="rv-dag-titel">Het vak geleerd bij oom Willy</span>
+      </div>
+      <div class="rv-tekst">
+        <p>Als jongeman trekt opa naar zijn oudste broer <strong>Wilhelm — "oom Willy"</strong> — in Friesoythe, zo'n 40 km ten zuidoosten van Oldenburg. Daar leert hij het kleermakersvak, een vak dat hij zijn hele leven zal blijven uitoefenen.</p>
+      </div>
+    </div>
+
+    <!-- HOOFDSTUK 5 -->
+    <div class="rv-dag" id="opa-amsterdam">
+      <div class="rv-dag-header">
+        <span class="rv-dag-datum">~1928</span>
+        <span class="rv-dag-titel">Te voet naar Amsterdam</span>
+      </div>
+      <div class="rv-tekst">
+        <p>Samen met zijn vriend <strong>Frans</strong> loopt opa helemaal naar Amsterdam — honderden kilometers, van het Oldenburger Münsterland tot aan de Amstel.</p>
+
+        <div style="margin:14px 0;border-radius:8px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+          <img src="images/opa-en-frans-op-weg-naar-amsterdam.jpg" alt="Opa en Frans op weg naar Amsterdam" style="width:100%;display:block;">
+          <div style="background:#f8f6f0;padding:8px 12px;font-size:12px;color:#888;font-style:italic;">Opa en Frans, onderweg naar Amsterdam 👣</div>
+        </div>
+
+        <div class="rv-highlight">Onderweg hangen ze hun vuile broeken aan een waslijn en nemen gewoon een schone mee — een verhaal dat de jaren heeft doorstaan!</div>
+      </div>
+    </div>
+
+    <!-- HOOFDSTUK 6 -->
+    <div class="rv-dag" id="opa-huwelijk">
+      <div class="rv-dag-header">
+        <span class="rv-dag-datum">28 juli 1938</span>
+        <span class="rv-dag-titel">Getrouwd met Carolina Roos</span>
+      </div>
+      <div class="rv-tekst">
+        <p>Op 28 juli 1938 trouwt Johann Theodor Hanekamp — 27 jaar oud — met Carolina Margaretha Roos in Amsterdam. Zij is dan 22 jaar, dochter van Gerardus Johannes Roos en Carolina de Blaauw.</p>
+
+        <div style="margin:14px 0;border-radius:8px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+          <img src="images/huwelijksakte.jpg" alt="Huwelijksakte van Johann Theodor Hanekamp en Carolina Roos" style="width:100%;display:block;">
+          <div style="background:#f8f6f0;padding:8px 12px;font-size:12px;color:#888;font-style:italic;">De huwelijksakte, 28 juli 1938 💍</div>
+        </div>
+
+        <div style="margin:14px 0;border-radius:8px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+          <img src="images/opa-en-oma.jpg" alt="Opa en oma samen" style="width:100%;display:block;">
+          <div style="background:#f8f6f0;padding:8px 12px;font-size:12px;color:#888;font-style:italic;">Opa en oma, samen ❤️</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOOFDSTUK 7 -->
+    <div class="rv-dag" id="opa-vader">
+      <div class="rv-dag-header">
+        <span class="rv-dag-datum">Daarna</span>
+        <span class="rv-dag-titel">Jouw vader — jouw verhaal</span>
+      </div>
+      <div class="rv-tekst">
+        <p>Uit dit huwelijk groeit het gezin waar jij deel van uitmaakt. Dit weekend gaan we terug naar het begin — naar Osternburg, naar Südmoslesfehn, naar Friesoythe — op zoek naar de plekken waar opa's verhaal begon.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;padding:20px 0;color:var(--warm-gray);font-style:italic;font-size:13px;border-top:1px dashed var(--border);">
+      🕰️ Einde van opa's verhaal — het begin van dit weekend
+    </div>
+
+  </div>
+
+  <div class="rv-jump">
+    <button id="op-prev-btn" title="Vorig hoofdstuk" onclick="opJump(-1)">↑</button>
+    <button id="op-next-btn" title="Volgend hoofdstuk" onclick="opJump(1)">↓</button>
+  </div>
+</div>
+
+<script>
+  const opChapterIds = ['opa-geboren', 'opa-osternburg', 'opa-sudmoslesfehn', 'opa-friesoythe', 'opa-amsterdam', 'opa-huwelijk', 'opa-vader'];
+
+  function opScrollTo(id) {
+    const content = document.getElementById('op-content');
+    const el = document.getElementById(id);
+    if (content && el) {
+      content.scrollTo({ top: el.offsetTop - 8, behavior: 'smooth' });
+    }
+  }
+
+  function opCurrentIndex() {
+    const content = document.getElementById('op-content');
+    if (!content) return 0;
+    const pos = content.scrollTop + 30;
+    let idx = 0;
+    opChapterIds.forEach((id, i) => {
+      const el = document.getElementById(id);
+      if (el && el.offsetTop <= pos) idx = i;
+    });
+    return idx;
+  }
+
+  function opSetActivePill(idx) {
+    document.querySelectorAll('#op-nav .rv-nav-pill[data-target]').forEach((btn, i) => {
+      btn.classList.toggle('active', i === idx);
+    });
+    const prevBtn = document.getElementById('op-prev-btn');
+    const nextBtn = document.getElementById('op-next-btn');
+    if (prevBtn) prevBtn.disabled = idx <= 0;
+    if (nextBtn) nextBtn.disabled = idx >= opChapterIds.length - 1;
+  }
+
+  function opJump(direction) {
+    const idx = Math.max(0, Math.min(opChapterIds.length - 1, opCurrentIndex() + direction));
+    opScrollTo(opChapterIds[idx]);
+    opSetActivePill(idx);
+  }
+
+  document.querySelectorAll('#op-nav .rv-nav-pill[data-target]').forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+      opScrollTo(btn.dataset.target);
+      opSetActivePill(i);
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const content = document.getElementById('op-content');
+    if (content) {
+      content.addEventListener('scroll', () => opSetActivePill(opCurrentIndex()));
+    }
+    opSetActivePill(0);
+  });
+
+  function toggleOp() {
+    const panel = document.getElementById('op-panel');
+    const overlay = document.getElementById('op-overlay');
+    const isOpen = panel.classList.contains('open');
+    panel.classList.toggle('open');
+    overlay.classList.toggle('open');
+    document.body.style.overflow = isOpen ? '' : 'hidden';
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      document.getElementById('op-panel').classList.remove('open');
+      document.getElementById('op-overlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+</script>
+
+
 
 </body>
 </html>
