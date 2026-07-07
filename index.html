@@ -1572,7 +1572,7 @@ function openArchiveLightbox(key) {
     <button class="rv-nav-pill active" data-target="dag-vrijdag">Vr 3/7</button>
     <button class="rv-nav-pill" data-target="dag-zaterdag">Za 4/7</button>
     <button class="rv-nav-pill" data-target="dag-zondag">Zo 5/7</button>
-    <button class="rv-nav-pill disabled" disabled title="Nog niet toegevoegd">Ma 6/7</button>
+    <button class="rv-nav-pill" data-target="dag-maandag">Ma 6/7</button>
   </div>
 
   <div class="rv-content" id="rv-content">
@@ -1723,9 +1723,45 @@ function openArchiveLightbox(key) {
       </div>
     </div>
 
-    <!-- MEER DAGEN VOLGEN -->
+    <!-- DAG 4 -->
+    <div class="rv-dag" id="dag-maandag">
+      <div class="rv-dag-header">
+        <span class="rv-dag-datum">Maandag 6 juli</span>
+        <span class="rv-dag-titel">Nog even genieten, dan naar huis</span>
+      </div>
+      <div class="rv-tekst">
+        <p>Vandaag alweer de laatste dag. De bekende routine: opstaan, koffie, ontbijten — en deze keer volgt daarna "inpakken en opruimen". We pakken onze koffers weer in en laten het huis netjes achter, precies zoals we het aantroffen.</p>
+
+        <p>Daarna gaan we naar de botanische tuin, zo'n duizend meter van ons huis vandaan. Een prachtige tuin vol planten die stuk voor stuk in bloei staan. Zelf vind ik de rotstuin het allermooist — en uiteraard doe ik meteen weer allerlei nieuwe ideeën op voor mijn eigen tuin. We lopen hier een paar uur rond, genietend van de laatste rustige uurtjes van dit bijzondere weekend.</p>
+
+        <div style="margin:14px 0;border-radius:8px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+          <img src="images/botanische-tuin-goudsbloem-border.jpg" alt="Oranjegele border in de botanische tuin" style="width:100%;display:block;">
+          <div style="background:#f8f6f0;padding:8px 12px;font-size:12px;color:#888;font-style:italic;">Een uitbundige border vol goudsbloemen en vuurpijlplanten 🌼</div>
+        </div>
+
+        <div style="margin:14px 0;border-radius:8px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+          <img src="images/botanische-tuin-rotstuin.jpg" alt="De rotstuin in de botanische tuin" style="width:100%;display:block;">
+          <div style="background:#f8f6f0;padding:8px 12px;font-size:12px;color:#888;font-style:italic;">De rotstuin — dé inspiratiebron van de dag 🪨</div>
+        </div>
+
+        <div style="margin:14px 0;border-radius:8px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+          <img src="images/botanische-tuin-vijver-reuzenwaterlelie.jpg" alt="Vijver met reuzenwaterlelies in de botanische tuin" style="width:100%;display:block;">
+          <div style="background:#f8f6f0;padding:8px 12px;font-size:12px;color:#888;font-style:italic;">Reuzenwaterlelies in de vijver — indrukwekkend groot 🌸</div>
+        </div>
+
+        <div class="rv-highlight">Weer een tuin vol inspiratie voor thuis.</div>
+
+        <p>Daarna gaan we op weg naar Friesoythe. Zaterdag liet ik daar mijn jas achter bij de bakker, en die gaan we nu ophalen. Uiteraard maken we meteen van de gelegenheid gebruik om nog een gebakje te scoren.</p>
+
+        <p>De reis naar huis verloopt vlot; het is niet heel druk onderweg. Wel houden we nog een tussenstop in Staphorst om te lunchen. Het is even zoeken naar iets leuks dat op een maandag open is, maar dat lukt bij restaurant <strong>Waanders</strong> — lekkere kroketten met brood of friet.</p>
+
+        <p>Daarna rijden we door naar huis, waar we rond 16:30 uur aankomen in Zeist. Een bijzonder weekend zit erop.</p>
+      </div>
+    </div>
+
+    <!-- EINDE REISVERSLAG -->
     <div style="text-align:center;padding:20px 0;color:var(--warm-gray);font-style:italic;font-size:13px;border-top:1px dashed var(--border);">
-      📝 Meer reisdagen volgen...
+      ✨ Einde van een bijzonder opa-weekend
     </div>
 
   </div>
@@ -1737,7 +1773,7 @@ function openArchiveLightbox(key) {
 </div>
 
 <script>
-  const rvDagIds = ['dag-vrijdag', 'dag-zaterdag', 'dag-zondag'];
+  const rvDagIds = ['dag-vrijdag', 'dag-zaterdag', 'dag-zondag', 'dag-maandag'];
 
   function rvScrollTo(id) {
     const content = document.getElementById('rv-content');
